@@ -59,6 +59,7 @@ java_generic_data_structures = {
     "hash set": "HashSet",
     "array list": "ArrayList",
     "hash map": "HashMap",
+    "linked list": "LinkedList",
 }
 
 unboxed_types = java_primitive_types.copy()
