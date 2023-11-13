@@ -227,7 +227,7 @@ debug console: user.vscode("workbench.debug.action.toggleRepl")
 debug clean: user.vscode("workbench.debug.panel.action.clearReplAction")
 
 # Terminal
-terminal external: user.vscode("workbench.action.terminal.openNativeConsole")
+terminal extract: user.vscode("workbench.action.terminal.openNativeConsole")
 terminal new: user.vscode("workbench.action.terminal.new")
 terminal next: user.vscode("workbench.action.terminal.focusNext")
 terminal last: user.vscode("workbench.action.terminal.focusPrevious")
