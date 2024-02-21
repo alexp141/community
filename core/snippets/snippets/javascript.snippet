@@ -24,11 +24,6 @@ phrase: import star
 import * as $0 from "$0";
 ---
 
-name: importFromStatement
-phrase: import from
--
-import $0 from "$0";
----
 
 name: namedLambdaExpression
 phrase: arrow funk
@@ -43,7 +38,30 @@ name: reactUseState
 phrase: use state
 insertionScope: statement
 -
-const [$1, set $1] = useState($0);
+const [$1, set$2] = useState($0);
+---
+
+name: reactStyledComponent
+phrase: style
+insertionScope: statement
+-
+const $1 = styled.$2`
+  $0
+`;
+---
+
+name: reactUseSearchParams
+phrase: use search params
+insertionScope: statement
+-
+const [searchParams, setSearchParams] = useSearchParams();
+---
+
+name: reactUseContext
+phrase: use context
+insertionScope: statement
+-
+const ${0:value} = useContext($1);
 ---
 
 name: reactUseEffect
@@ -54,3 +72,38 @@ useEffect(() => {
     $0
 }, []);
 ---
+
+name: importDefaultStatement
+phrase: import
+-
+import $1 from "$0";
+---
+
+name: importNamedStatement
+phrase: import named
+-
+import {$1} from "$0";
+---
+
+name: importReactDOMStatement
+phrase: import react dom
+-
+import ReactDOM from "react-dom/client";
+---
+
+name: importReactStatement
+phrase: import react
+-
+import React from "react";
+---
+
+name: importComponent
+phrase: component
+
+$1.insertionFormatter: PUBLIC_CAMEL_CASE
+-
+export default function $TM_FILENAME_BASE() {
+    return(
+        $1
+    )
+}
