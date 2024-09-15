@@ -292,10 +292,15 @@ preview markdown: user.vscode("markdown.showPreview")
 project start :
     user.vscode("workbench.action.terminal.focus")
     sleep(100ms) 
-    insert("npm run start")
+    insert("npm run dev")
     sleep(100ms)
     key(enter)
-    
+
+project stop :
+    user.vscode("workbench.action.terminal.focus")
+    sleep(100ms) 
+    key(ctrl-c)
+
 project build : 
     user.vscode("workbench.action.terminal.focus") 
     sleep(100ms)
