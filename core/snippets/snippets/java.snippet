@@ -1,0 +1,26 @@
+language: java
+---
+
+name: public function
+phrase: public funk
+-
+public ${1:returnType} ${2:name}($3) {
+    $0
+}
+
+---
+name: private function
+phrase: private funk
+-
+private ${1:returnType} ${2:name}($3) {
+    $0
+}
+---
+
+name: enhanced for loop
+phrase: enhanced
+-
+for (${1:item} : ${2:collection}) {
+    $0
+}
+---

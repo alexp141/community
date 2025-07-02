@@ -96,6 +96,9 @@ clear way down:
 copy that: edit.copy()
 copy word left: user.copy_word_left()
 copy word right: user.copy_word_right()
+copy text:
+    edit.select_all()
+    edit.copy()
 
 #to do: do we want these variants, seem to conflict
 # copy left:
@@ -153,7 +156,7 @@ new line below | slap: edit.line_insert_down()
     insert(" ")
 
 # Undo/redo
-undo that: edit.undo()
+(undo that | nope): edit.undo()
 redo that: edit.redo()
 
 # Save

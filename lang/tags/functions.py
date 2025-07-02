@@ -19,7 +19,7 @@ mod.list(
 )
 
 ctx.lists["user.code_function_modifier"] = {
-    "pub": "public",
+    "public": "public",
     "pro": "protected",
     "private": "private",
     "static": "static",
