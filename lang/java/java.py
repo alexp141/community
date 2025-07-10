@@ -41,6 +41,8 @@ java_common_classes = {
     "string": "String",
     "thread": "Thread",
     "exception": "Exception",
+    "node": "Node",
+    "list node": "ListNode"
 }
 
 mod.list("java_common_class", desc="Java Common Classes")
@@ -67,6 +69,9 @@ unboxed_types.update(java_common_classes)
 unboxed_types.update(java_generic_data_structures)
 
 ctx.lists["user.code_type"] = unboxed_types
+
+mod.list("java_primitive_types", desc="Java Primitive Types")
+ctx.lists["user.java_primitive_types"] = java_primitive_types
 
 mod.list("java_generic_data_structure", desc="Java Generic Data Structures")
 ctx.lists["self.java_generic_data_structure"] = java_generic_data_structures

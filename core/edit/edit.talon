@@ -96,6 +96,9 @@ clear way down:
 copy that: edit.copy()
 copy word left: user.copy_word_left()
 copy word right: user.copy_word_right()
+copy text:
+    edit.select_all()
+    edit.copy()
 
 #to do: do we want these variants, seem to conflict
 # copy left:

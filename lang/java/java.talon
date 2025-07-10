@@ -27,7 +27,7 @@ settings():
 state var: "var "
 
 # Types Commands
-boxed [type] {user.java_boxed_type}: insert(user.java_boxed_type + " ")
+boxed [type] {user.java_boxed_type}: insert(user.java_boxed_type)
 
 generic [type] {user.java_generic_data_structure}:
     user.insert_between(java_generic_data_structure + "<", ">")
@@ -42,3 +42,10 @@ type {user.code_type} array:
 op array: user.code_operator_subscript()
 
 op new: insert("new ")
+
+type {user.java_primitive_types}: insert(user.java_primitive_types + " ")
+
+finish line:
+    key("end")
+    key(";")
+    key("enter")
