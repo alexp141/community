@@ -1,0 +1,15 @@
+list: user.system_paths
+hostname: Alexanders-Air
+-
+user: /Users/alexanderpastor
+profile: /Users/alexanderpastor
+desktop: /Users/alexanderpastor/Desktop
+desk: /Users/alexanderpastor/Desktop
+documents: /Users/alexanderpastor/Documents
+docks: /Users/alexanderpastor/Documents
+downloads: /Users/alexanderpastor/Downloads
+music: /Users/alexanderpastor/Music
+pictures: /Users/alexanderpastor/Pictures
+videos: /Users/alexanderpastor/Videos
+talon home: /Users/alexanderpastor/.talon
+talon user: /Users/alexanderpastor/.talon/user
