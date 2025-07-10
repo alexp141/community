@@ -136,6 +136,7 @@ go recent [<user.text>]:
     insert(text or "")
     sleep(250ms)
 go edit: user.vscode("workbench.action.navigateToLastEditLocation")
+tab back: key(ctrl-tab)
 
 # Bookmarks. Requires Bookmarks plugin
 bar marks: user.vscode("workbench.view.extension.bookmarks")

@@ -31,7 +31,7 @@ gamepad(start:up):          user.gamepad_button_up("start")
 # Shoulder buttons
 gamepad(l1:down):           user.gamepad_button_down("left_shoulder")
 gamepad(l1:up):             user.gamepad_button_up("left_shoulder")
-gamepad(r1:down):           user.gamepad_button_down("right_shoulder")
+gamepad(r1:repeat):           user.gamepad_trigger_left(value)
 gamepad(r1:up):             user.gamepad_button_up("right_shoulder")
 
 # Stick buttons

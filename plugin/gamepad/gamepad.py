@@ -2,8 +2,8 @@ from talon import Module, actions, ctrl, ui
 from talon.screen import Screen
 
 screen: Screen = ui.main_screen()
-slow_scroll = False
-slow_mouse_move = False
+slow_scroll = True
+slow_mouse_move = True
 
 mod = Module()
 mod.tag("gamepad", desc="Activate tag to enable gamepad bindings")
