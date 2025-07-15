@@ -164,3 +164,7 @@ file save: edit.save()
 file save all: edit.save_all()
 
 [go] line mid: user.line_middle()
+
+# My edits
+push: key(right)
+pull: key(left)
